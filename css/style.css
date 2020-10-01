@@ -1,0 +1,285 @@
+:root{
+  --red: #EE3643;
+  --dark-blue: #293449;
+  --white: #FFFFFF;
+  --black: #000000;
+  --green-button: #63A63E;
+  --background-orange: #FFBF47;
+  --background-blue: #3BBCE3;
+  --background-purple: #DC91D8;
+  --background-green: #8ED78F;
+  --part-color: #F9F5F0;
+  --grey: #A9A9A9;
+  --light-blue: #F1F5F7;
+  --dark-light-blue: #32425C;
+  --golden: #FFD180;
+  --footer-address: #F3F7F9;
+}
+
+/*Global*/
+.page-body{
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.page-body a{
+    text-decoration: none;
+}
+.page-body ul{
+  list-style: none;
+}
+
+.main-header{
+  background: rgba(0, 0, 0, 0.0001);
+}
+.up-header{
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-family: "Cuprum";
+  font-size: 18px;
+  line-height: 24px;
+}
+.search{
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-family: "Cuprum";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.shop-name{
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.form{
+  background-color: var(--green-button);
+  color: var(--white);
+}
+
+.red-text{
+  color: var(--red);
+  font-family: "Cuprum";
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+}
+.telno{
+  color: var(--red);
+  font-family: "Cuprum";
+  font-weight: bold: ;
+  font-size: 21px;
+  line-height: 30px;
+  text-decoration: none;
+  border: 3px solid var(--white);
+}
+
+.address{
+  color:var(--dark-blue);
+  font-family: "Cuprum";
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.header-button{
+  background: rgba(0, 0, 0, 0.0001);
+  color: var(--black);
+  font-family: "Cuprum";
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.site-navigation,
+.site-navigation a{
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-family: "Cuprum";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.item{
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
+}
+
+.main-button{
+  background: rgba(255,255,255,0.3);
+  color: var(--white);
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+}
+.orange-background{
+  background-color: var(--background-orange);
+}
+.blue-background{
+  background-color: var(--background-blue);
+}
+.purple-background{
+  background-color:  var(--background-purple);
+}
+.green-background{
+  background-color:  var(--background-green);
+}
+
+.black-line{
+  background-color: rgba(0,0,0,0.25);
+}
+.perforators{
+  font-family: "Cuprum";
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--white);
+}
+.description-perforators{
+  font-family: "Cuprum";
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+}
+
+.red-button{
+  background-color: var(--red);
+  color: var(--white);
+  font-family: "Cuprum";
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.part{
+  background-color: var(--part-color);
+  color: var(--dark-blue);
+  font-family: "Cuprum";
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.description{
+  color: var(--black);
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+.crossed{
+  color: var(--grey);
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+.price{
+  background-color: var(--red);
+  color: var(--white);
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.services-background{
+  background-color: var(--light-blue);
+}
+
+.title{
+  color: var(--black);
+  font-family: "Cuprum";
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.option{
+  background-color: var(--dark-light-blue);
+  color: var(--white);
+  font-family: "Cuprum";
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.active{
+  background-color: var(--white);
+  color: var(--dark-light-blue);
+  font-family: "Cuprum";
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+}
+.delivery{
+  color: var(--dark-light-blue);
+  font-family: "Cuprum";
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.companies{
+  font-family: "Cuprum";
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.blue-background-footer{
+  background-color: var(--dark-light-blue);
+}
+.dark-blue-background-footer{
+  background-color: var(--dark-blue);
+}
+
+.shop-name-footer{
+  background-color: var(--red);
+}
+
+.upper-ul,
+.upper-ul a{
+  color: var(--light-blue);
+  font-family: "Cuprum";
+  font-size: 18px;
+  line-height: 24px;
+}
+.lower-ul,
+.lower-ul a{
+  color: var(--golden);
+  font-family: "Cuprum";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.address-footer{
+  color: var(--footer-address);
+  font-family: "Cuprum";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.rights{
+  color: var(--white);
+  font-family: "Cuprum";
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.reference{
+  color: var(--white);
+  font-family: "Cuprum";
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.reference span,
+.academy{
+  color: var(--golden);
+  font-family: "Cuprum";
+  font-size: 16px;
+  line-height: 18px
+}
