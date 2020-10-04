@@ -14,6 +14,9 @@
   --dark-light-blue: #32425C;
   --golden: #FFD180;
   --footer-address: #F3F7F9;
+  --catalog-title: #F2F6F8;
+  --cream: #F7F3EC;
+  --border: #E5E5E5;
 }
 
 /*Global*/
@@ -25,10 +28,10 @@
 }
 
 .page-body a{
-    text-decoration: none;
+    text-decoration:none;
 }
 .page-body ul{
-  list-style: none;
+  list-style:none;
 }
 
 .main-header{
@@ -64,7 +67,9 @@
   background-color: var(--red);
   color: var(--white);
 }
-
+.box {
+  background-color: var(--red);
+}
 .form{
   background-color: var(--green-button);
   color: var(--white);
@@ -102,6 +107,16 @@
   line-height: 21px;
 }
 
+.cabinet{
+  color: var(--black);
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+.cabinet li:nth-child(2){
+  list-style: circle;
+}
+
 .site-navigation,
 .site-navigation a{
   background-color: var(--dark-blue);
@@ -111,7 +126,7 @@
   line-height: 24px;
 }
 
-.item{
+.item h3{
   font-family: "Cuprum", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -161,6 +176,85 @@
   color: var(--white);
 }
 
+.navigator {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color:var(--black);
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.catalog-title{
+  font-family: "Cuprum", "Arial", sans-serif;
+  background-color: var(--catalog-title);
+  color:var(--dark-light-blue);
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;  font-family: "PT Sans", "Arial", sans-serif;
+  color:var(--black);
+}
+
+.filter {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color:var(--black);
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color:var(--cream);
+}
+
+.filter-price{
+  background-color:var(--cream);
+}
+
+.filter-title{
+  font-family: "PT Sans", "Arial", sans-serif;
+  color:var(--black);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filter-list li,
+.filter-list {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color:var(--black);
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.filter-button{
+  font-family: "PT Sans", "Arial", sans-serif;
+  color:var(--black);
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+  background-color:var(--white);
+  border: 1px solid var(--border);
+}
+
+
+.filter-upper li{
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color:var(--red);
+  text-transform: uppercase;
+}
+
+
+.filter-upper li:nth-child(2),
+.filter-upper li:nth-child(3)
+{
+  color:var(--black);
+  opacity:0.3;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--red);
+
+}
 .red-button{
   background-color: var(--red);
   color: var(--white);
@@ -202,6 +296,45 @@
   line-height: 18px;
 }
 
+.buy-link{
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+  background-color: var(--green-button);
+  text-transform: uppercase;
+}
+.basket-link{
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--dark-light-blue);
+  background-color: var(--white);
+  text-transform: uppercase;
+  border: 3px solid var(--green-button);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.pages li{
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  border-radius: 2px;
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--border);
+}
+
+.pages li:first-child{
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  border-radius: 2px;  color: var(--white);
+  background-color: var(--red);
+  border: 1px solid var(--red);
+}
+
 .services-background{
   background-color: var(--light-blue);
 }
@@ -211,6 +344,7 @@
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .option{
@@ -235,6 +369,7 @@
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .companies{
