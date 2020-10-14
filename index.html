@@ -47,13 +47,13 @@
 
   </header>
 
-<main>
+<main class="container">
 
   <h1 hidden>Магазин Техномарт</h1>
 
-  <section id="navigation">
+  <section id="navigation" class="navigation">
     <h2 hidden>Навигация</h2>
-    <ul>
+    <ul class="navigation-list">
       <li class="item orange-background"><h3>Материалы</h3><br>
         <a class="main-button">на любой вкус</a>
           <img src="img/icon-1.svg" width="44" height="65" alt="paint-icon">
@@ -64,37 +64,37 @@
       </li>
       <li class="item purple-background"><h3>Техника</h3><br>
         <a class="main-button">для стройки</a>
-        <img src="img/icon-3.svg" width="77.96" height="62" alt="truck-icon">
+        <img src="img/icon-3.svg" width="78" height="62" alt="truck-icon">
       </li>
       <li class="item green-background"><h3>Скидки 50%</h3><br>
         <a class="main-button">на 350 товаров</a>
-        <img src="img/icon-4.svg" width="58.89" height="70.89" alt="bucket-icon">
+        <img src="img/icon-4.svg" width="59" height="72" alt="bucket-icon">
       </li>
       <li class="item orange-background"><h3>Доставка</h3><br>
         <a class="main-button">бесплатно</a>
         <img src="img/icon-5.svg" width="78" height="63" alt="car-icon">
       </li>
-    <li>
-<div>
-  <div class="black-line">
-  <p class="perforators">Перфораторы</p>
-  <p class="description-perforators">Настоящие мужские игружки</p>
-</div>
-  <button>Назад</button>
-  <button>Вперед</button>
-  <a href="catalog.html" class="red-button">открыть каталог</a>
-  <img src="img/layer_99.jpg" width="620" height="266" alt="Мужик с дрелью">
-</div>
-</li>
+    <li class="picture-drill">
+      <div>
+        <div class="black-line">
+          <p class="perforators">Перфораторы</p>
+          <p class="description-perforators">Настоящие мужские игружки</p>
+        </div>
+        <button>Назад</button>
+        <button>Вперед</button>
+        <a href="catalog.html" class="red-button">открыть каталог</a>
+        <img src="img/layer_99.jpg" width="620" height="266" alt="Мужик с дрелью">
+      </div>
+    </li>
   </ul>
   </section>
 
-  <section id="popular_product">
+  <section id="popular_product" class="product">
     <div class="part">
     <h2>популярные товары:</h2>
     <a class="red-button">все популярные товары</a>
   </div>
-      <ul>
+      <ul class="product-list">
         <li>
           <a href="">
             <img src="img/snippet-32961_copy_3.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
@@ -133,12 +133,12 @@
      </ul>
 </section>
 
-<section id="company" >
+<section id="company" class="company">
   <div class="part">
   <h2>популярные производители:</h2>
     <a class="red-button">все производители</a>
   </div>
-  <ul>
+  <ul class="company-list">
     <li>
       <a href="">
         <img src="img/bosch.png" width="126" height="37" alt="лого bosch">
@@ -205,7 +205,8 @@
 
 
 
-<section>
+<section class="company-contact">
+  <div>
   <h2 class="title">Компания "Техномарт"</h2>
   <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
     ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
@@ -218,15 +219,15 @@
     <li class="companies">ЖелДорЭкспедиция</li>
   </ul>
   <a class="red-button">подробнее о компании</a>
-</section>
+</div>
 
-<section>
+<div>
   <h2 class="title">Контакты</h2>
   <p>Вы можете забрать товар сами,<br>
     заехав в наш офис:</p>
-    <!--Тут будет карта-->
      <img src="img/map.jpg" width="300" height="158" alt="адрес на карте">
     <a class="red-button">заблудились? напишите нам!</a>
+</div>
 </section>
 
 </main>
@@ -266,7 +267,7 @@
 
     <ul>
        <li>
-         <a ><img src="img/icon-vk.svg" width="25.05" height="14.06" alt="vk-icon"></a>
+         <a ><img src="img/icon-vk.svg" width="26" height="15" alt="vk-icon"></a>
        </li>
        <li>
          <a ><img src="img/icon-fb.svg" width="12" height="22" alt="facebook-icon"></a>

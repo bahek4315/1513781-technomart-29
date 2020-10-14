@@ -19,12 +19,102 @@
   --border: #E5E5E5;
 }
 
+/*Grid*/
+.page{
+  height: 100%;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.navigation{
+  outline: 5px solid red;
+  outline-offset: -5px;
+  margin-bottom: 100px;
+}
+
+.navigation-list{
+  display: grid;
+  margin: 0;
+  padding: 0;
+  gap:20px;
+  grid-template-columns: 300px 300px 300px;
+  grid-auto-rows: 123px 123px 123px;
+}
+.navigation-list li{
+  outline: 5px solid yellow;
+  outline-offset: -5px;
+}
+.picture-drill{
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+}
+
+.picture-drill p{
+  margin: 0;
+  padding: 0;
+}
+
+.product{
+  outline: 5px solid green;
+  outline-offset: -5px;
+  margin-bottom: 70px;
+}
+
+.product-list{
+  display: grid;
+  margin: 0;
+  padding: 0;
+  gap:20px;
+  grid-template-columns: repeat(4, 220px);
+  grid-auto-rows: 318px;
+}
+.product-list li{
+  outline: 5px solid blue;
+  outline-offset: -5px;
+}
+
+.company{
+  outline: 5px solid purple;
+  outline-offset: -5px;
+  margin-bottom: 70px;
+}
+
+.company-list{
+  display: grid;
+  margin: 0;
+  padding: 0;
+  gap:20px;
+  grid-template-columns: repeat(4, 220px);
+  grid-template-rows: repeat(2, 145px);
+}
+.company-list li{
+  outline: 5px solid orange;
+  outline-offset: -5px;
+}
+
+.company-contact{
+  display: grid;
+  gap:180px;
+  grid-template-columns: 1fr 1fr;
+  outline: 5px solid cyan;
+  outline-offset: -5px;
+  margin-top: 70px;
+}
+
 /*Global*/
 .page-body{
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
+  min-height: 100%;
+display: grid;
+grid-template-rows: min-content 1fr min-content;
+align-content: start;
 }
 
 .page-body a{
