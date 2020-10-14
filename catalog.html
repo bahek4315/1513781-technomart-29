@@ -50,8 +50,7 @@
 
   </header>
 
-<main>
-  <form oninput="price_output.value=price.value"></form>
+<main class="container">
 
 <h1 hidden>Каталог</h1>
 
@@ -67,7 +66,8 @@
 </section>
 
 <h2 class="catalog-title">перфораторы</h2>
-
+<div class="global-grid">
+<div>
 <section id="filter">
   <h2 class="filter">Фильтр</h2>
   <!--Here will be filter elements -->
@@ -118,7 +118,9 @@
 </div>
 <button class="filter-button" type="button">Показать</button>
 </section>
+</div>
 
+<div>
 <section id="sorting" class="filter-price">
   <h2 class="filter">Сортировка:</h2>
   <ul class="filter-upper">
@@ -128,14 +130,11 @@
   </ul>
   <button>по возрастанию</button><!--Стрелка наверх -->
   <button>по убыванию</button><!--Стрелка вниз -->
-
-</section>
-
+  </section>
 
 <section id="perforators">
 <h2 hidden>Перфораторы</h2>
-<ul>
-
+  <ul class="perforators-grid">
   <li>
     <a href="">
       <img src="img/snippet-945_copy_2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -246,7 +245,7 @@
 
 <ul class="pages">
       <li>
-        <a >1</a>
+        <a>1</a>
       </li>
       <li>
         <a href="" >2</a>
@@ -260,6 +259,8 @@
     </ul>
 
 </section>
+</div>
+</div>
 
 <section class="services-background">
   <h2 class="title">Пара слов о перфораторах</h2>
@@ -304,7 +305,7 @@
 
     <ul>
        <li>
-         <a ><img src="img/icon-vk.svg" width="25.05" height="14.06" alt="vk-icon"></a>
+         <a ><img src="img/icon-vk.svg" width="26" height="15" alt="vk-icon"></a>
        </li>
        <li>
          <a ><img src="img/icon-fb.svg" width="12" height="22" alt="facebook-icon"></a>
