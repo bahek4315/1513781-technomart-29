@@ -34,6 +34,7 @@
   outline: 5px solid red;
   outline-offset: -5px;
   margin-bottom: 100px;
+  margin-top: 59px;
 }
 
 .navigation-list{
@@ -103,6 +104,7 @@
   outline: 5px solid cyan;
   outline-offset: -5px;
   margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .global-grid{
@@ -134,6 +136,58 @@ grid-template-columns: 220px 700px;
   outline-offset: -5px;
 }
 
+/*Flex*/
+
+.site-navigation{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  width:940px;
+  height:60px;
+  margin: 0 auto;
+  outline: 5px solid tomato;
+  outline-offset: -5px;
+  padding:0;
+  margin-bottom: 60px;
+}
+
+.part{
+  display: flex;
+  width:940px;
+  height: 89px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upper-ul{
+  display: flex;
+  justify-content: space-between;
+  outline: 5px solid tomato;
+  outline-offset: -5px;
+  padding: 0;
+}
+.lower-ul{
+  display: flex;
+  justify-content: space-between;
+  outline: 5px solid orange;
+  outline-offset: -5px;
+  padding: 0;
+}
+.frame-of-site-flex{
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-flex{
+  display: flex;
+  justify-content:space-between;
+}
+.icon-flex li{
+  margin: 0 5px;
+}
 /*Global*/
 .page-body{
   font-family: "PT Sans", "Arial", sans-serif;
@@ -162,6 +216,11 @@ grid-template-rows: min-content 1fr min-content;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
+}
+
+.frame-of-site{
+  width:940px;
+  margin: 0 auto;
 }
 .search{
   background-color: var(--dark-blue);
@@ -384,13 +443,24 @@ grid-template-rows: min-content 1fr min-content;
   text-transform: uppercase;
 }
 
-.part h2{
+.part{
   background-color: var(--part-color);
+  margin-bottom: 20px;
+}
+.part h2{
   color: var(--dark-blue);
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-left: 28px;
+}
+
+.part a{
+  width:192px;
+  height:38px;
+  margin: 0;
+  padding: 0;
 }
 
 .description{
@@ -463,6 +533,7 @@ grid-template-rows: min-content 1fr min-content;
 .services-background{
   background-color: var(--light-blue);
   font-weight: 400;
+  padding-top: 64px;
 }
 
 .title{
@@ -537,6 +608,7 @@ grid-template-rows: min-content 1fr min-content;
   font-family: "Cuprum", "Arial", sans-serif, "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
 }
 
 .rights{
@@ -551,6 +623,8 @@ grid-template-rows: min-content 1fr min-content;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 .reference span,
