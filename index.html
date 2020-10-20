@@ -12,28 +12,31 @@
 
   <header class="main-header">
     <div class="up-header">
-      <div class="frame-of-site">
+      <div class="container flex-header">
         <a href="index.html" class="shop-name"><img src="img/logo-technomart.svg" width="108" height="18" alt="Technomart-logo"></a>
         <img src="img/icon-search.svg" width="17" height="17" alt="icon-search">
         <input type="search" class="search" name="search" id="search" placeholder="Поиск:">
         <img src="img/icon-bookmark.svg" width="14" height="16" alt="icon-bookmark">
-        <a>Закладки:0</a>
+        <a class="flex-shift">Закладки:0</a>
         <img src="img/icon-cart.svg" width="15" height="15" alt="icon-cart">
         <a>Корзина:0</a>
         <input type="submit" value="Оформить заказ" class="form" >
     </div>
     </div>
-    <div class="frame-of-site">
-     <p class="red-text">Интернет-магазин<br>
+
+    <div class="container flex-header-mid">
+        <p class="red-text">Интернет-магазин<br>
        Строительных материалов<br>
        и инструментов для ремонта<br>
-     </p>
-
-
-     <a href="tel:+78125550555" class="telno"><img src="img/icon-phone.svg" width="19" height="19" alt="icon-phone">+7 (812) 555-05-55</a>
-     <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </p>
+        <div>
+          <a href="tel:+78125550555" class="telno"><img src="img/icon-phone.svg" width="19" height="19" alt="icon-phone">+7 (812) 555-05-55</a>
+          <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+   <div>
      <a href="" class="header-button"><img src="img/icon-login.svg" width="20" height="17" alt="icon-login">Войти</a>
      <a href="" class="header-button">Регистрация</a>
+   </div>
    </div>
     <nav class="main-navigation">
       <ul class="site-navigation">
@@ -49,11 +52,11 @@
 
   </header>
 
-<main class="container">
+<main>
 
   <h1 hidden>Магазин Техномарт</h1>
 
-  <section id="navigation" class="navigation">
+  <section id="navigation" class="navigation container">
     <h2 hidden>Навигация</h2>
     <ul class="navigation-list">
       <li class="item orange-background"><h3>Материалы</h3><br>
@@ -91,7 +94,7 @@
   </ul>
   </section>
 
-  <section id="popular_product" class="product">
+  <section id="popular_product" class="product container">
     <div class="part">
     <h2>популярные товары:</h2>
     <a class="red-button">все популярные товары</a>
@@ -135,7 +138,7 @@
      </ul>
 </section>
 
-<section id="company" class="company">
+<section id="company" class="company container">
   <div class="part">
   <h2>популярные производители:</h2>
     <a class="red-button">все производители</a>
@@ -185,29 +188,30 @@
 </section>
 
 <section class="services-background">
-<h2 class="title">Сервисы</h2>
-<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-
-<ul>
-  <li class="active">Доставка</li>
-  <li class="option">Гарантия</li>
-  <li class="option">Кредит</li>
-</ul>
-
-<p class="delivery">Доставка</p>
-<p>Мы с удовольствием доставим ваш товар прямо<br>
-  к вашему подъезду совершенно бесплатно!<br>
-  Ведь мы неплохо заработаем,<br>
-поднимая его на ваш этаж!
-</p>
-<img src="img/layer_131_1.png" width="468" height="261" alt="lorry-icon">
-
+  <div class="container">
+    <h2 class="title">Сервисы</h2>
+    <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+      Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+      <div class="services-flex">
+        <ul class="services-list">
+          <li class="active">Доставка</li>
+          <li class="option">Гарантия</li>
+          <li class="option">Кредит</li>
+        </ul>
+        <div>
+          <p class="delivery">Доставка</p>
+          <p>Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно бесплатно!<br>
+            Ведь мы неплохо заработаем,<br>
+            поднимая его на ваш этаж!</p>
+        </div>
+      </div>
+    </div>
 </section>
 
 
 
-<section class="company-contact">
+<section class="company-contact container">
   <div>
   <h2 class="title">Компания "Техномарт"</h2>
   <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
@@ -237,7 +241,8 @@
 
   <footer>
     <div class="blue-background-footer">
-    <div class="frame-of-site">
+      <div class="container">
+    <div class="flex-footer">
     <a href="" class="shop-name-footer"><img src="img/logo-technomart.svg" width="138" height="23" alt="Technomart-logo"></a>
       <ul class="upper-ul">
          <li><a >Компания</a></li>
@@ -246,6 +251,8 @@
          <li><a >Доставка</a></li>
          <li><a >Контакты</a></li>
        </ul>
+      </div>
+<div class="flex-footer">
       <ul class="lower-ul">
          <li><a >Материалы</a></li>
          <li><a >Техника</a></li>
@@ -253,7 +260,8 @@
          <li><a >Спецпредложения</a></li>
        </ul>
     <p class="address-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
-  </div>
+</div>
+</div>
   </div>
   <div class="dark-blue-background-footer">
     <div class="frame-of-site-flex">
@@ -270,13 +278,15 @@
          <a ><img src="img/icon-insta.svg" width="21" height="21" alt="instagram-icon"></a>
        </li>
      </ul>
-
+<div class="link-flex">
     <p class="reference">Обратная связь:<br>
       <span>mail@htmlacademy.ru</span></p>
   <div>
     <p class="reference">Разработано:</p>
     <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
   </div>
+</div>
+
 </div>
 </div>
   </footer>

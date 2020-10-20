@@ -27,7 +27,7 @@
 .container {
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .navigation{
@@ -138,6 +138,23 @@ grid-template-columns: 220px 700px;
 
 /*Flex*/
 
+.flex-header{
+  display:flex;
+  justify-content:flex-start;
+  align-items: center;
+  height: 42px;
+  outline: 5px solid rgba(255, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+.flex-shift{
+margin-left: auto;
+}
+.flex-header-mid{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
 .site-navigation{
   display:flex;
   justify-content: space-around;
@@ -158,6 +175,17 @@ grid-template-columns: 220px 700px;
   justify-content: space-between;
   align-items: center;
 }
+.services-flex{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  outline: 5px solid tomato;
+  outline-offset: -5px;
+}
+
+.services-flex div{
+  margin-left: 80px;
+}
 
 .upper-ul{
   display: flex;
@@ -166,6 +194,9 @@ grid-template-columns: 220px 700px;
   outline-offset: -5px;
   padding: 0;
 }
+.upper-ul li:not(:first-child):not(:last-child){
+  margin: 0 59px;
+}
 .lower-ul{
   display: flex;
   justify-content: space-between;
@@ -173,12 +204,33 @@ grid-template-columns: 220px 700px;
   outline-offset: -5px;
   padding: 0;
 }
+
+.lower-ul li:not(:first-child):not(:last-child){
+  margin: 0 59px;
+}
+
+.flex-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-footer p{
+  order: -1;
+}
 .frame-of-site-flex{
   width: 940px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.link-flex{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.link-flex div{
+  margin-left: 51px;
 }
 
 .icon-flex{
@@ -218,10 +270,6 @@ grid-template-rows: min-content 1fr min-content;
   line-height: 24px;
 }
 
-.frame-of-site{
-  width:940px;
-  margin: 0 auto;
-}
 .search{
   background-color: var(--dark-blue);
   color: var(--white);
@@ -534,6 +582,14 @@ grid-template-rows: min-content 1fr min-content;
   background-color: var(--light-blue);
   font-weight: 400;
   padding-top: 64px;
+}
+
+.services-list{
+  width: 240px;
+  height: 183px;
+  padding: 0;
+  margin: 0;
+  padding-top: 70px;
 }
 
 .title{
