@@ -12,30 +12,36 @@
 
   <header class="main-header">
     <div class="up-header">
+      <div class="container flex-header">
   <a href="index.html" class="shop-name"><img src="img/logo-technomart.svg" width="108" height="18" alt="Technomart-logo"></a>
     <img src="img/icon-search.svg" width="17" height="17" alt="icon-search">
     <input class="search" type="search" name="search" id="search" placeholder="Поиск:">
      <img src="img/icon-bookmark.svg" width="14" height="16" alt="icon-bookmark">
-     <a>Закладки:0</a>
+     <a class="flex-shift">Закладки:0</a>
      <a class="box"><img src="img/icon-cart.svg" width="15" height="15" alt="icon-cart">Корзина:10</a>
      <input class="form" type="submit" value="Оформить заказ">
 </div>
+</div>
+<div class="container  flex-header-mid">
      <p class="red-text">Интернет-магазин<br>
        Строительных материалов<br>
        и инструментов для ремонта<br>
      </p>
-
+<div>
      <a href="tel:+78125550555" class="telno"><img src="img/icon-phone.svg" width="19" height="19" alt="icon-phone">+7 (812) 555-05-55</a>
      <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-
+</div>
+<div>
      <a class="header-button">
        <img src="img/icon-user.svg" width="20" height="18" alt="icon-user">
        Равшан Джамшутович
      <img src="img/icon-logout.svg" width="20" height="17" alt="icon-logout"></a>
-     <ul class="cabinet">
+     <ul class="cabinet flex-header-mid">
      <li><a href="" >Мои заказы</a></li>
     <li><a href="">Личный кабинет</a></li>
 </ul>
+</div>
+</div>
     <nav class="main-navigation">
       <ul class="site-navigation">
          <li><a href="index.html">Главная</a></li>
@@ -50,10 +56,10 @@
 
   </header>
 
-<main class="container">
+<main>
 
 <h1 hidden>Каталог</h1>
-
+<div class="container">
 <section>
 <h2 hidden>Навигация</h2>
 
@@ -75,8 +81,11 @@
   <div class="filter-price">
    <input type="range" id="price" name="price" min="0" max="40000" step="500" value="30000">
  </div>
-   <br>
-  <div class="filter-price"><input name="zero" value="0"></div> - <div class="filter-price"><input name="price_output" ></div>
+<div class="flex-number-input">
+  <p class="number-input">0</p>
+  <p>-</p>
+  <p class="number-input">30000</p>
+   </div>
 
 <h3 class="filter-title">Производители:</h3>
 <ul class="filter-list">
@@ -122,6 +131,7 @@
 
 <div>
 <section id="sorting" class="filter-price">
+  <div class="sorting-flex">
   <h2 class="filter">Сортировка:</h2>
   <ul class="filter-upper">
     <li><a>По цене:</a></li>
@@ -130,6 +140,7 @@
   </ul>
   <button>по возрастанию</button><!--Стрелка наверх -->
   <button>по убыванию</button><!--Стрелка вниз -->
+</div>
   </section>
 
 <section id="perforators">
@@ -197,10 +208,10 @@
 
   <li>
     <a href="">
-      <img src="img/snippet-18927_copy_3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+      <img src="img/snippet-945_copy_2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
   </a>
 <p class="description">Перфоратор BOSCH<br>
-  BFG 3000</p>
+  BFG 2000</p>
   <p class="price">12500 Р.</p>
   <button class="buy-link" type="button">Купить</button>
   <button class="basket-link" type="button">В закладки</button>
@@ -232,10 +243,10 @@
 
   <li>
     <a href="">
-      <img src="himg/snippet-945_copy_2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+      <img src="img/snippet-945_copy_2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
   </a>
 <p class="description">Перфоратор BOSCH<br>
-  BFG 3000</p>
+  BFG 2000</p>
   <p class="price">12500 Р.</p>
   <button class="buy-link" type="button">Купить</button>
   <button class="basket-link" type="button">В закладки</button>
@@ -259,24 +270,26 @@
     </ul>
 
 </section>
-
+</div>
 </div>
 </div>
 
 <section class="services-background">
+  <div class="container">
   <h2 class="title">Пара слов о перфораторах</h2>
   <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
 В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+</div>
 </section>
 </main>
 
 
 <footer>
   <div class="blue-background-footer">
+    <div class="container">
+  <div class="flex-footer">
   <a href="" class="shop-name-footer"><img src="img/logo-technomart.svg" width="138" height="23" alt="Technomart-logo"></a>
-
-
     <ul class="upper-ul">
        <li><a >Компания</a></li>
        <li><a >Новости</a></li>
@@ -284,43 +297,43 @@
        <li><a >Доставка</a></li>
        <li><a >Контакты</a></li>
      </ul>
-
-
-
+    </div>
+<div class="flex-footer">
     <ul class="lower-ul">
        <li><a >Материалы</a></li>
        <li><a >Техника</a></li>
        <li><a >Инструмент</a></li>
        <li><a >Спецпредложения</a></li>
      </ul>
-
-
   <p class="address-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
-
 </div>
-
+</div>
+</div>
 <div class="dark-blue-background-footer">
+  <div class="frame-of-site-flex">
   <p class="rights">© 2010–2019 Компания "Техномарт"<br>
     Все права защищены</p>
-
-
-    <ul>
-       <li>
-         <a ><img src="img/icon-vk.svg" width="26" height="15" alt="vk-icon"></a>
-       </li>
-       <li>
-         <a ><img src="img/icon-fb.svg" width="12" height="22" alt="facebook-icon"></a>
-       </li>
-       <li>
-         <a ><img src="img/icon-insta.svg" width="21" height="21" alt="instagram-icon"></a>
-       </li>
-     </ul>
-
+  <ul class="icon-flex">
+     <li>
+       <a ><img src="img/icon-vk.svg" width="26" height="15" alt="vk-icon"></a>
+     </li>
+     <li>
+       <a ><img src="img/icon-fb.svg" width="12" height="22" alt="facebook-icon"></a>
+     </li>
+     <li>
+       <a ><img src="img/icon-insta.svg" width="21" height="21" alt="instagram-icon"></a>
+     </li>
+   </ul>
+<div class="link-flex">
   <p class="reference">Обратная связь:<br>
     <span>mail@htmlacademy.ru</span></p>
+<div>
   <p class="reference">Разработано:</p>
   <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+</div>
+</div>
 
+</div>
 </div>
 </footer>
 
