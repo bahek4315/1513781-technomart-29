@@ -14,9 +14,10 @@
     <div class="up-header">
       <div class="container flex-header">
         <a href="index.html" class="shop-name"><img src="img/logo-technomart.svg" width="108" height="18" alt="Technomart-logo"></a>
-        <div class="search-div">
+        <form method="get" action="https://echo.htmlacademy.ru">
           <input type="search" class="search" name="search" id="search" placeholder="Поиск:">
-        </div>
+          <label class="search-div" for="search"></label>
+        </form>
         <a class="flex-shift bookmark bookmark-catalog" href="">Закладки: 0</a>
         <a class="basket box-red" href="">Корзина: 10</a>
         <a class="form-button" href="">Оформить заказ</a>
@@ -110,11 +111,11 @@
           <label for="bosch">bosch</label>
         </div>
         <div class="form-group">
-          <input type="checkbox" id="interskol" name="interskol">
+          <input type="checkbox" id="interskol" name="interskol" disabled>
           <label for="interskol">интерскол</label>
         </div>
         <div class="form-group">
-          <input type="checkbox" id="makita" name="makita" checked>
+          <input type="checkbox" id="makita" name="makita" checked disabled>
           <label for="makita">makita</label>
         </div>
         <div class="form-group">
@@ -129,11 +130,11 @@
     <fieldset class="filter-item">
       <h3 class="filter-title-power">Питание:</h3>
       <div class="filter-list-power">
-        <input  type="radio" value="accumulator" id="accumulator" name="power" checked>
+        <input  type="radio" value="accumulator" id="accumulator" name="power" checked disabled>
         <label for="accumulator">аккумуляторные</label>
       </div>
       <div class="filter-list-power">
-        <input type="radio" value="mains" id="mains" name="power">
+        <input type="radio" value="mains" id="mains" name="power" disabled>
         <label for="mains">сетевые</label>
       </div>
       <button class="filter-button" type="submit">Показать</button>

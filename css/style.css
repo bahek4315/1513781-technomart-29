@@ -526,21 +526,21 @@ grid-template-rows: min-content 1fr min-content;
   line-height: 24px;
 }
 
+
+.search-div{
+  position: relative;
+}
+
 .search-div::before{
   content: "";
   position: absolute;
   width: 17px;
   height: 17px;
-  left:-22px;
-  bottom:5px;
+  left:18px;
+  top:-30px;
   background-image: url('../img/icon-search.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-.search-div{
-  position: relative;
-  margin-left: 42px;
 }
 
 .search{
@@ -550,7 +550,22 @@ grid-template-rows: min-content 1fr min-content;
   font-size: 18px;
   line-height: 24px;
   border: none;
+  display: block;
+  height: 42px;
+  width: 271px;
+  padding-left: 43px;
+  position: relative;
 }
+
+.search:focus + label::before{
+  background-image: url('../img/icon-search-red.svg');
+}
+
+.search:focus{
+  background-color: var(--white);
+  color: var(--black);
+}
+
 .search a{
   font-size: 24px;
   font-weight: 400;
@@ -1173,17 +1188,24 @@ top: 97px;
   background-position: 0 0;
 }
 
+/*
+.form-group input:checked:disabled + label:before{
+  background-image: url('../img/checkbox-on-hover.png');
+  opacity: 0.3;
+}
+.form-group input:disabled + label:before{
+  background-image: url('../img/checkbox-off-hover.png');
+  opacity: 0.3;
+}
+*/
 .form-group input:checked + label:hover::before{
   background-image: url('../img/checkbox-on-hover.png');
 }
 
 .form-group input:disabled + label{
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
-.form-group input:disabled + label::before{
-  opacity: 0.4;
-}
 
 .filter-list-power{
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1229,13 +1251,14 @@ top: 97px;
   background-image: url('../img/radio-on-hover.png');
 }
 
-.filter-list-power input:disabled + label{
-  opacity: 0.4;
+.filter-list-power input:checked + label:hover::before{
+  background-image: url('../img/radio-on-hover.png');
 }
 
-.filter-list-power input:disabled + label::before{
-  opacity: 0.4;
+.filter-list-power input:disabled + label{
+  opacity: 0.3;
 }
+
 
 .filter-button{
   font-family: "PT Sans", "Arial", sans-serif;
